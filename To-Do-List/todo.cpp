@@ -22,3 +22,19 @@ void showTasks() {
         cout << i + 1 << ". " << tasks[i] << endl;
     }
 }
+
+void deleteTask() {
+    showTasks();
+    if (tasks.empty()) return;
+
+    int taskNum;
+    cout << "Enter task number to delete: ";
+    cin >> taskNum;
+
+    if (taskNum > 0 && taskNum <= tasks.size()) {
+        tasks.erase(tasks.begin() + taskNum - 1);
+        cout << "Task deleted!\n";
+    } else {
+        cout << "Invalid task number!\n";
+    }
+}
