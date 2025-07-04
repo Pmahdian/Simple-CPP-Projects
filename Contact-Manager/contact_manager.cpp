@@ -49,3 +49,25 @@ void viewContacts() {
         cout << i+1 << ". " << contacts[i].name << " - " << contacts[i].phone << endl;
     }
 }
+
+
+int main() {
+    loadContacts();
+    int choice;
+
+    while (true) {
+        cout << "\n--- Contact Manager ---\n";
+        cout << "1. Add Contact\n";
+        cout << "2. View Contacts\n";
+        cout << "3. Exit\n";
+        cout << "Enter choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: addContact(); break;
+            case 2: viewContacts(); break;
+            case 3: return 0;
+            default: cout << "Invalid choice!\n";
+        }
+    }
+}
