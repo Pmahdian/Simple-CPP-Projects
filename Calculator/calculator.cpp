@@ -22,7 +22,6 @@ int main() {
     bool running = true;
 
     while (running) {
-        pauseScreen();
         clearScreen(); // Clear console screen for a clean look
         cout << "=== Simple C++ Calculator ===\n" << endl;
         
@@ -159,6 +158,7 @@ int main() {
                 break;
         }
         cout << "----------------------------" << endl;
+        pauseScreen();
     }
 
     return 0;
