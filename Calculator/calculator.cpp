@@ -3,6 +3,11 @@
 #include <cmath>
 using namespace std;
 
+void pauseScreen(){
+    cout << "Press Enter to continue..." << endl;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Wait for user to press Enter
+}
+
 void clearScreen(){
     #ifdef _WIN32
         system("cls");
@@ -17,7 +22,7 @@ int main() {
     bool running = true;
 
     while (running) {
-
+        pauseScreen();
         clearScreen(); // Clear console screen for a clean look
         cout << "=== Simple C++ Calculator ===\n" << endl;
         
