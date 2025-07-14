@@ -1,4 +1,4 @@
-# 🚀 Simple C++ Projects Collection  
+# Simple C++ Projects Collection  
 A curated set of beginner-friendly C++ projects to help you learn core programming concepts through hands-on practice.  
 
 ## 📦 Projects  
